@@ -1,0 +1,218 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/8 3:38
+ * @version     v1.0
+ * @filename    StatHubMap.css
+ * @description 
+ ***************************************************************************/
+
+#StatHubMap {
+    height: 75.4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#sh-map {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+}
+
+.mapboxgl-map {
+    width: 85vw !important;
+    height: 75.4vh !important;
+    position: relative !important;
+    margin: 0 auto;
+}
+
+.l7-scene {
+    position: relative !important;
+    width: 85vw !important;
+    margin: 0 auto;
+    margin-top: -75.4vh !important;
+}
+
+.l7-control-container {
+    position: relative !important;
+    width: 85vw !important;
+    margin: 0 auto;
+}
+
+.l7-bottom {
+    top: 72.6vh !important;
+}
+
+.l7-ctrl-logo, .l7-control-logo {
+    display: none !important;
+}
+
+/*control*/
+#sh-map-control {
+    position: absolute;
+    width: 85vw;
+    height: 75.4vh;
+    margin: 0 auto;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.sh-map-control-layer-switcher {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sh-map-control-layer-btn {
+    border-radius: 5px;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: white;
+    margin-top: 10px;
+    pointer-events: visible;
+    visibility: hidden;
+    transition: visibility 0.2s;
+}
+
+.sh-map-style-btn-active {
+    visibility: visible;
+}
+
+.sh-map-control-layer-switcher:hover .sh-map-control-layer-btn {
+    visibility: visible;
+}
+
+.sh-map-control-layer-btn::selection, .sh-map-control-layer-btn:focus {
+    border-color: white;
+}
+
+.sh-map-control-layer-btn:hover {
+    border-color: #8E9DAB;
+}
+
+.sh-map-control-img {
+    width: 44px;
+    height: 44px;
+    pointer-events: none;
+}
+
+/*filters*/
+#sh-map-filters {
+    height: 530px;
+    background-color: rgba(28, 31, 38, 0.8);
+    pointer-events: visible;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 999;
+}
+
+.sh-map-filters-btn-collapse {
+    height: 100%;
+    width: 40px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+.sh-map-filters-btn-collapse:focus,
+.sh-map-filters-btn-collapse:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    color: white;
+}
+
+.sh-map-filters-container {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 15px;
+    color: white;
+}
+
+.sh-map-filters-container p {
+    margin-bottom: 5px;
+}
+
+.sh-map-filters-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.sh-map-filters-wrap-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.sh-map-filters-wrap-row:hover {
+    cursor: pointer;
+}
+
+.sh-map-filters-wrap-row:hover .sh-map-filters-wrap-row-text {
+    color: #338e6c !important;
+}
+
+.sh-map-filters-wrap-row-color {
+    width: 40px;
+    height: 10px;
+    margin-right: 15px;
+}
+
+#sh-map-filters-wrap-row-color-0 {
+    background: linear-gradient(to right, #3899ad, #d57a03, #b40212, #5802c9);
+}
+
+#sh-map-filters-wrap-row-color-1 {
+    background-color: #3899ad;
+}
+
+#sh-map-filters-wrap-row-color-2 {
+    background-color: #d57a03;
+}
+
+#sh-map-filters-wrap-row-color-3 {
+    background-color: #b40212;
+}
+
+#sh-map-filters-wrap-row-color-4 {
+    background-color: #5802c9;
+}
+
+.sh-map-filters-wrap-row-text {
+    width: 200px;
+}

@@ -1,0 +1,119 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/3 14:52
+ * @version     v1.0
+ * @filename    About.css
+ * @description 
+ ***************************************************************************/
+
+#About {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.ab-banner {
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.ab-content {
+    margin: 30px auto;
+    max-width: 2550px;
+    min-width: 650px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ab-p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*title*/
+.ab-banner-title {
+    background: url(../../assets/about/banner.jpg) no-repeat center center;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab-banner-title h1, .ab-banner-title h2, .ab-banner-title h3 {
+    color: white;
+}
+
+.ab-banner-title h1 {
+    font-size: 3.5rem;
+    margin-top: 180px;
+    margin-bottom: 3px;
+}
+
+.ab-banner-title h2 {
+    font-size: 1.8rem;
+}
+
+.ab-banner-title h3 {
+    font-size: 1.5rem;
+    margin-top: 80px;
+}
+
+/*nav*/
+.ab-profile {
+    text-align: center;
+}
+
+.ab-content h1 {
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin: 30px 0 40px 0;
+    text-align: center;
+}
+
+.ab-btn-nav-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.ab-btn-nav-sub-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ab-btn-nav-sub-wrap:hover {
+    cursor: pointer;
+}
+
+.ab-btn-nav-sub-wrap:hover img {
+    margin: 0;
+    width: 16vw;
+}
+
+.ab-btn-nav-wrap img {
+    width: 14vw;
+    margin: 1vw;
+    border-radius: 1000px;
+    transition: 0.3s;
+}
+
+.ab-btn-nav-wrap h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}

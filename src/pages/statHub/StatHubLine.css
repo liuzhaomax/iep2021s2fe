@@ -1,0 +1,23 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/8 12:02
+ * @version     v1.0
+ * @filename    StatHubLine.css
+ * @description 
+ ***************************************************************************/
+
+#StatHubLine {
+    height: 75.4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+}
+
+.sh-line {
+    width: 85vw;
+}

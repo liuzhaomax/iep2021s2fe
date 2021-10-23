@@ -1,0 +1,192 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/26 12:39
+ * @version     v1.0
+ * @filename    GetInvolved.css
+ * @description 
+ ***************************************************************************/
+
+#GetInvolved {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.gi-banner {
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/*title*/
+.gi-banner-title {
+    background: url(../../assets/getInvolved/banner.jpg) no-repeat center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gi-banner-title-text h1, .gi-banner-title-text h2 {
+    color: white;
+}
+
+.gi-banner-title-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3px;
+}
+
+.gi-banner-title-text h2 {
+    font-size: 1.8rem;
+}
+
+.gi-banner-title-text {
+    margin-top: 19vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*shadow*/
+.gi-banner-shadow {
+    background-color: rgba(45, 52, 46, 0.46);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.gi-banner-shadow h2, .gi-banner-shadow h3 {
+    width: 60vw;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.gi-banner-shadow h2 {
+    font-size: 2rem;
+    color: #FCC490;
+}
+
+.gi-banner-shadow h3 {
+    font-size: 18px;
+    color: white;
+}
+
+/*shadow btn*/
+.gi-banner-shadow-btn-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+}
+
+.gi-banner-shadow-btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    width: 25vw;
+    height: 25vw;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+}
+
+.gi-banner-shadow-btn-join {
+    background: url(../../assets/getInvolved/join.jpg) no-repeat;
+    background-size: 100% 100%;
+    /*filter: contrast(0.9) brightness(0.75) saturate(1.3);*/
+}
+
+.gi-banner-shadow-btn-donate {
+    background: url(../../assets/getInvolved/donate.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gi-banner-shadow-btn-connect {
+    background: url(../../assets/getInvolved/connect.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gi-position-holder {
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 22.5vh;
+}
+
+.gi-banner-shadow-btn h2, .gi-banner-shadow-btn h3, .gi-banner-shadow-btn h4 {
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.gi-banner-shadow-btn h2 {
+    font-size: 2.6rem;
+    margin-top: 10px;
+}
+
+.gi-banner-shadow-btn h3 {
+    font-size: 18px;
+}
+
+.gi-banner-shadow-btn h4 {
+    margin-bottom: 20px;
+    margin-top: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.gi-banner-shadow-btn:hover {
+    cursor: pointer;
+}
+
+.gi-banner-shadow-btn:hover h4 {
+    color: #FCC490;
+}
+
+/*blank*/
+.gi-transition-blank {
+    width: 100%;
+    height: 280px;
+    background-color: white;
+}
+
+.gi-bg-donate-connect {
+    background: url(../../assets/getInvolved/bg_donate_connect.jpg) no-repeat center center;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .gi-transition-blank {
+        height: 230px;
+    }
+    .gi-banner-shadow>h2, .gi-banner-shadow>h3 {
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .gi-transition-blank {
+        height: 230px;
+    }
+    .gi-banner-shadow>h2, .gi-banner-shadow>h3 {
+        width: 80vw;
+    }
+}

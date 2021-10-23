@@ -1,0 +1,40 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/4 6:04
+ * @version     v1.0
+ * @filename    AboutStory.css
+ * @description 
+ ***************************************************************************/
+
+#AboutStory {
+    width: 100%;
+}
+
+.ab-banner-story {
+    background: url(../../assets/about/banner_story.jpg) no-repeat center center;
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab-banner-story h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.AboutStory h2 {
+    text-align: center;
+    width: 768px;
+    font-size: 2rem;
+}
+
+#ab-story-timeline {
+    background: url(../../assets/about/timeline.png) no-repeat;
+    background-size: 100% 100%;
+    width: 850px;
+    height: 1000px;
+}

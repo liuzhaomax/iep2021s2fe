@@ -1,0 +1,70 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/4 6:04
+ * @version     v1.0
+ * @filename    AboutUs.css
+ * @description 
+ ***************************************************************************/
+
+#AboutUs {
+    width: 100%;
+}
+
+/*video*/
+.ab-banner-video {
+    background-color: #465c51;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ab-content-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.ab-content-video-container {
+    width: 570px;
+    margin: 75px 10px 60px 10px;
+    max-height: 600px;
+}
+
+.ab-video {
+    border-radius: 15px;
+}
+
+/*text*/
+.ab-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1620px) {
+    .ab-us-container {
+        width: 120%;
+    }
+}
+
+.ab-us-p-container {
+    width: 38vw;
+    min-width: 650px;
+}
+
+.ab-us-p-container span {
+    font-weight: bold;
+}
+
+.AboutUs h2 {
+    font-size: 2rem;
+}

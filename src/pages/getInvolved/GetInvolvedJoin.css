@@ -1,0 +1,142 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/26 14:36
+ * @version     v1.0
+ * @filename    GetInvolvedJoin.css
+ * @description 
+ ***************************************************************************/
+
+#GetInvolvedJoin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #596d62;
+    padding-top: 50px;
+}
+
+.gi-join-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 85vw;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.gi-join-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+.gi-join-row-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gi-join-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 100%;
+}
+
+.gi-join-row-wrap .gi-join-img {
+    width: 100%;
+    height: 100%;
+}
+
+.gi-join-text, .gi-join-row-wrap .gi-join-img {
+    max-height: 35vh;
+}
+
+.gi-join-row-wrap h2, .gi-join-row-wrap h3, .gi-join-row-wrap a {
+    color: white;
+    width: 90%;
+    margin: 20px 0;
+}
+
+.gi-join-row-wrap h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.gi-join-row-wrap h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.gi-join-row-wrap a {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FCC490;
+    text-align: center;
+}
+
+.gi-join-row-wrap a:hover {
+    cursor: pointer;
+    color: rgba(252, 196, 144, 0.8);
+}
+
+.gi-join-img-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 35%;
+}
+
+.gi-join-svg-cover {
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    padding: 10px 20px;
+    background-color: rgba(45, 52, 46, 0.46);
+}
+
+.gi-join-svg-cover-vic {
+    text-align: left;
+}
+
+.gi-join-svg-cover-nsw {
+    text-align: right;
+}
+
+.gi-join-svg-cover .gi-join-svg {
+    height: 100%;
+}
+
+.gi-join-svg-cover-nsw .gi-join-svg {
+    margin-right: -30px;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .gi-join-row-wrap h2 {
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .gi-join-row-wrap h2 {
+        font-size: 1.6rem;
+    }
+}

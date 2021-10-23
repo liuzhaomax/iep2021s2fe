@@ -1,0 +1,135 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/4 22:00
+ * @version     v1.0
+ * @filename    StatHubMain.css
+ * @description 
+ ***************************************************************************/
+
+#StatHubMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: 100%;
+}
+
+.sh-zone-upper {
+    width: 100%;
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+    2px 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 99999;
+}
+
+.sh-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85vw;
+}
+
+#sh-nav {
+    align-self: flex-end;
+}
+
+.sh-menu-item {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/*total*/
+.sh-nav-total-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+.sh-nav-total-wrap .g2-html-annotation {
+    display: none !important;
+}
+
+.sh-nav-total-text-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sh-nav-total-text-wrap:hover, #StatHubMain h1 {
+    cursor: default;
+}
+
+.sh-nav-total-text-wrap p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 0 10px;
+    width: 140px;
+}
+
+.sh-nav-total-text-hover-panel-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 2000;
+    transform: translateY(125px);
+    pointer-events: none;
+}
+
+.sh-nav-total-text-hover-panel {
+    background-color: #338e6c;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.sh-nav-total-hover-1:hover ~ .sh-nav-total-text-hover-panel-container .sh-nav-total-text-hover-panel:nth-child(1) {
+    visibility: visible;
+}
+
+.sh-nav-total-hover-2:hover ~ .sh-nav-total-text-hover-panel-container .sh-nav-total-text-hover-panel:nth-child(2) {
+    visibility: visible;
+}
+
+.sh-nav-total-hover-3:hover ~ .sh-nav-total-text-hover-panel-container .sh-nav-total-text-hover-panel:nth-child(3) {
+    visibility: visible;
+}
+
+.sh-nav-total-hover-4:hover ~ .sh-nav-total-text-hover-panel-container .sh-nav-total-text-hover-panel:nth-child(4) {
+    visibility: visible;
+}
+
+/*loading*/
+#sh-graph-loading {
+    position: absolute;
+    z-index: 2000;
+    background-color: rgba(255,255,255,0.8);
+    top: 178px;
+    width: 100%;
+    height: 81.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}

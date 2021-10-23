@@ -1,0 +1,309 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/8/21 10:04
+ * @version     v1.0
+ * @filename    PlantHub.css
+ * @description 
+ ***************************************************************************/
+
+.PlantHub {
+    position: relative;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    padding-bottom: 178px;
+}
+
+#ph-layout-search-bar {
+    background: url(../../assets/plantHub/bg_ph.png) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ph-layout-search-bar-panel {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    padding-top: 225px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#ph-layout-search-bar-panel h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-left: 21vw;
+    min-width: 365px;
+}
+
+#ph-layout-search-bar-panel p {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 21vw;
+    min-width: 365px;
+}
+@media only screen and (min-width: 600px) {
+    #ph-layout-search-bar-panel h1, #ph-layout-search-bar-panel p {
+        margin-left: 21vw;
+    }
+}
+@media only screen and (max-width: 599px) {
+    #ph-layout-search-bar-panel h1, #ph-layout-search-bar-panel p {
+        margin-left: 0;
+    }
+}
+
+#ph-btn-browse-all {
+    width: 360px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 1.7rem;
+    align-self: center;
+    margin-top: 27vh;
+}
+
+/*search bar*/
+#PlantHub .ant-input-affix-wrapper {
+    border-radius: 10px;
+    z-index: 99;
+    transition: 0s;
+    top: 375px;
+}
+
+#ph-search-bar {
+    height: 50px;
+    font-size: 20px;
+    transition: 0s;
+}
+
+.ph-inner-icon:hover {
+    cursor: pointer;
+}
+
+.ph-inner-icon svg {
+    height: 40px;
+    width: 40px;
+    fill: #333;
+}
+
+.ph-inner-icon svg:first-child {
+    margin-right: 16px;
+}
+
+/*#ph-btn-browse-all span {*/
+/*    transform: translateY(50%);*/
+/*}*/
+
+#ph-banner {
+    position: relative;
+    top: 100vh;
+    width: 100vw;
+    height: 178px;
+    background: url(../../assets/plantHub/bg_ph_main.png) no-repeat center center;
+    z-index: 85;
+}
+
+/*Main*/
+#PlantHubMain {
+    color: #333;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    margin-top: 100vh;
+    z-index: 80;
+}
+
+.ph-layout {
+    width: 100vw;
+    color: #333;
+    background-color: white;
+}
+
+#ph-layout-table-content {
+    width: 100%;
+    padding: 30px 0 20px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*To Top*/
+#ph-btn-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 60px;
+    margin-right: 40px;
+    z-index: 95;
+    cursor: pointer;
+}
+
+#ph-btn-to-top svg {
+    width: 50px;
+    height: 50px;
+    fill: #338e6c;
+}
+
+#ph-btn-to-top svg:hover {
+    fill: rgba(51, 142, 108, 0.7);
+}
+
+/*search bar box*/
+#ph-search-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+#ph-search-bar-box {
+    background-color: #edeef2;
+    border-radius: 10px;
+    border: 0;
+    z-index: 99;
+    height: 350px;
+    top: 380px;
+    position: relative;
+    padding: 10px 15px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 1600px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 1100px;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 1000px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1366px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 800px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 500px;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 767px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 415px;
+    }
+    #ph-search-bar-box, #ph-search-camera-box {
+        visibility: hidden !important;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 376px;
+    }
+    #ph-search-bar-box, #ph-search-camera-box {
+        visibility: hidden !important;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #ph-search-bar-box, #ph-search-camera-box {
+        width: 375px;
+    }
+    #ph-search-bar-box, #ph-search-camera-box {
+        visibility: hidden !important;
+    }
+}
+
+#ph-search-bar-box h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0 5px 0;
+}
+
+.ph-search-tag-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.ph-search-tag {
+    background-color: white;
+    height: 30px;
+    line-height: 26px;
+    transition: 0s;
+    margin-bottom: 10px;
+}
+
+.ph-search-tag:hover {
+    cursor: pointer;
+    border: 1px solid #338e6c;
+}
+
+#ph-search-tag-history-title, #ph-search-tag-history-wrap {
+    display: none;
+}
+
+.ph-search-tag-icon {
+    margin-right: 5px;
+}
+
+.ph-search-tag .ant-tag-close-icon {
+    transition: 0s;
+}
+
+/*camera*/
+#ph-search-camera-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #edeef2;
+    border-radius: 10px;
+    border: 0;
+    z-index: 99;
+    position: absolute;
+    top: 440px;
+    visibility: hidden;
+}
+
+#ph-search-camera-box > span {
+    width: 100%;
+}
+
+.ant-notification-notice {
+    margin-top: 50px;
+}

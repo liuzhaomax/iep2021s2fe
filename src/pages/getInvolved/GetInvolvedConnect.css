@@ -1,0 +1,134 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/26 17:43
+ * @version     v1.0
+ * @filename    GetInvolvedConnect.css
+ * @description 
+ ***************************************************************************/
+
+#GetInvolvedConnect {
+    width: 100%;
+    /*min-height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: url(../../assets/getInvolved/bg_connect.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+}
+
+.gi-connect-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 85vw;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.gi-connect-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    align-self: center;
+}
+
+.gi-connect-container h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.gi-connect-container-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.gi-connect-column-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.gi-connect-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.gi-connect-column-wrap h3, .gi-connect-column-wrap a, .gi-connect-find-more a {
+    color: white;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.gi-connect-column-wrap h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.gi-connect-column-wrap a, .gi-connect-find-more a {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FCC490;
+    text-align: center;
+}
+
+.gi-connect-column-wrap a:hover, .gi-connect-find-more a:hover {
+    cursor: pointer;
+    color: rgba(252, 196, 144, 0.8);
+}
+
+.gi-connect-find-more a {
+    font-size: 2rem;
+}
+
+.gi-connect-find-more {
+    margin-bottom: 30px;
+}
+
+.gi-connect-svg-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.gi-connect-svg {
+    height: 20vw;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .gi-donate-row-wrap h2 {
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .gi-donate-row-wrap h2 {
+        font-size: 1.8rem;
+    }
+}

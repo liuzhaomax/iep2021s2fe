@@ -1,0 +1,143 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/8/23 10:58
+ * @version     v1.0
+ * @filename    HomeReason.css
+ * @description 
+ ***************************************************************************/
+
+.home-reason-sub-block-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+}
+
+.home-reason-sub-block-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home-reason-sub-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: rgba(64, 87, 75, 0.87);
+    border-radius: 35px;
+    height: 34vh;
+    /*max-width: 1600px;*/
+    width: 46vw;
+    padding: 20px 30px;
+}
+
+.home-reason-sub-block-left {
+     margin-right: 20px;
+ }
+
+.home-reason-sub-block-right {
+    margin-left: 20px;
+}
+
+#HomeReason h3 {
+    color: white;
+    font-size: 24px;
+    max-font-size: 24px;
+}
+
+#HomeReason p {
+    font-size: 18px;
+    max-font-size: 18px;
+}
+
+.home-reason-sub-block-element {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.home-reason-sub-block-element-img {
+    align-self: center;
+}
+
+.home-reason-img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 35px;
+    margin-left: 30px;
+    width: 15vw;
+}
+
+/*media*/
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+    .home-reason-img {
+        width: 13vw;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    #HomeReason p {
+        font-size: 16px;
+    }
+    .home-reason-img {
+        width: 10vw;
+    }
+}
+@media only screen and (min-width: 994px) and (max-width: 1024px) {
+    #HomeReason h3 {
+        font-size: 20px;
+    }
+    #HomeReason p {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 993px) {
+    #HomeReason h3 {
+        font-size: 16px;
+    }
+    #HomeReason p {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    #HomeReason h3 {
+        font-size: 16px;
+    }
+    #HomeReason p {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 450px) {
+    #HomeReason h3 {
+        font-size: 16px;
+    }
+    #HomeReason p {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    #HomeReason h3 {
+        font-size: 16px;
+    }
+    #HomeReason p {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #HomeReason h3 {
+        font-size: 16px;
+    }
+    #HomeReason p {
+        font-size: 14px;
+    }
+}

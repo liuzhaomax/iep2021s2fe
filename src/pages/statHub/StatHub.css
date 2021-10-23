@@ -1,0 +1,48 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/4 18:56
+ * @version     v1.0
+ * @filename    StatHub.css
+ * @description 
+ ***************************************************************************/
+
+#StatHub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.sh-banner {
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/*title*/
+.sh-banner-title {
+    background: url(../../assets/statHub/banner.jpg) no-repeat center center;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sh-banner-title h1, .sh-banner-title h2 {
+    color: white;
+}
+
+.sh-banner-title h1 {
+    font-size: 3.2rem;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.sh-banner-title h2 {
+    font-size: 1.6rem;
+    margin: 0;
+}

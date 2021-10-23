@@ -1,0 +1,189 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/8 12:02
+ * @version     v1.0
+ * @filename    StatHubForce.css
+ * @description 
+ ***************************************************************************/
+
+#StatHubForce {
+    height: 75.4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#sh-force {
+    width: 85vw;
+    height: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#sh-force canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/*filters*/
+#sh-force-filters {
+    position: absolute;
+    height: 600px;
+    background-color: rgba(28, 31, 38, 0.8);
+    pointer-events: visible;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 1500;
+}
+
+.sh-force-filters-btn-collapse {
+    height: 100%;
+    width: 40px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+.sh-force-filters-btn-collapse:focus,
+.sh-force-filters-btn-collapse:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    color: white;
+}
+
+.sh-force-filters-container {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 15px;
+    color: white;
+}
+
+.sh-force-filters-container p {
+    margin-bottom: 5px;
+}
+
+.sh-force-filters-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.sh-force-filters-wrap-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.sh-force-filters-wrap-row:hover {
+    cursor: pointer;
+}
+
+.sh-force-filters-wrap-row:hover .sh-force-filters-wrap-row-text {
+    color: #338e6c !important;
+}
+
+.sh-force-filters-wrap-row-color {
+    width: 40px;
+    height: 10px;
+    margin-right: 15px;
+}
+
+#sh-force-filters-wrap-row-color-0 {
+    background: linear-gradient(to right, #3899ad, #d57a03, #b40212, #5802c9);
+}
+
+#sh-force-filters-wrap-row-color-1 {
+    background-color: #3899ad;
+}
+
+#sh-force-filters-wrap-row-color-2 {
+    background-color: #d57a03;
+}
+
+#sh-force-filters-wrap-row-color-3 {
+    background-color: #b40212;
+}
+
+#sh-force-filters-wrap-row-color-4 {
+    background-color: #5802c9;
+}
+
+.sh-force-filters-wrap-row-text-status {
+    width: 200px;
+}
+
+.sh-force-filters-wrap-row-text-state {
+    width: 50px;
+}
+
+.sh-force-filters-wrap-state {
+    width: auto;
+    height: 66px;
+    flex-wrap: wrap;
+}
+
+/*switcher*/
+#sh-force-control {
+    position: absolute;
+    width: 85vw;
+    height: 75.4vh;
+    margin: 0 auto;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.sh-force-control-layer-switcher {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sh-force-control-layer-btn {
+    width: 50px;
+    margin-top: 10px;
+    color: white;
+    pointer-events: visible;
+}
+
+.sh-force-control-layer-switcher span {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}

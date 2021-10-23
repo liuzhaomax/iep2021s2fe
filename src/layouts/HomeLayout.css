@@ -1,0 +1,159 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/7/28 16:27
+ * @version     v1.0
+ * @filename    MainLayout.css
+ * @description 
+ ***************************************************************************/
+
+.HomeLayout {
+    overflow: hidden;
+    width: 100%;
+    background-color: #5f6b70;
+    /*cursor: url('../assets/leaf.cur'), auto;*/
+}
+
+#parallax-compo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parallax-compo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(64, 87, 75, 0.6), transparent);
+    z-index: 9;
+}
+
+#parallax-compo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#handssq {
+    opacity: 0;
+}
+
+#text {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 56px;
+    margin-top: -420px;
+    pointer-events: none;
+}
+
+#slogan1 {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 28px;
+    margin-top: -220px;
+    pointer-events: none;
+}
+
+#slogan2 {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 28px;
+    margin-top: -130px;
+    pointer-events: none;
+}
+
+#instruction {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 16px;
+    margin-top: -10px;
+    pointer-events: none;
+}
+
+#explore {
+    display: inline-block;
+    cursor: pointer;
+    /*cursor: url('../assets/leaf-help.cur'), pointer;*/
+    border: 3px solid #fcc490;
+    color: #fcc490;
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    font-size: 1.7rem;
+    width: 150px;
+    height: 50px;
+    margin-top: 100px;
+    line-height: 35px;
+    transition-duration: unset;
+}
+
+#explore:hover {
+    border: 3px solid #fcc490;
+    color: #fcc490;
+    box-shadow: inset -3px -3px 6px #fcc490,
+    inset 3px 3px 6px #fcc490;
+}
+
+/*home bg*/
+.home-bg {
+    background: url(../assets/home/bg_home.jpeg) no-repeat center center;
+    position: fixed;
+    width: 100%;
+    height: 135vh;
+    top: 0;
+}
+
+/*media*/
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+}
+@media only screen and (min-width: 994px) and (max-width: 1024px) {
+
+}
+@media only screen and (min-width: 769px) and (max-width: 993px) {
+    #text {
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    #text {
+        font-size: 46px;
+        width: 414px;
+        text-align: center;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    #text {
+        font-size: 40px;
+        width: 375px;
+        text-align: center;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #text {
+        font-size: 36px;
+        width: 375px;
+        text-align: center;
+        white-space: normal;
+        word-break: break-word;
+    }
+}

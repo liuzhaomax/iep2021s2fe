@@ -1,0 +1,123 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/26 17:04
+ * @version     v1.0
+ * @filename    GetInvolvedDonate.css
+ * @description 
+ ***************************************************************************/
+
+#GetInvolvedDonate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: url(../../assets/getInvolved/bg_donate.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+}
+
+.gi-donate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 85vw;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.gi-donate-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    align-self: flex-end;
+}
+
+.gi-donate-container-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.gi-donate-row-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gi-donate-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 100%;
+}
+
+.gi-donate-row-wrap h2, .gi-donate-row-wrap h3, .gi-donate-row-wrap a {
+    color: white;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.gi-donate-row-wrap h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.gi-donate-row-wrap h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.gi-donate-row-wrap a {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FCC490;
+    text-align: center;
+}
+
+.gi-donate-row-wrap a:hover {
+    cursor: pointer;
+    color: rgba(252, 196, 144, 0.8);
+}
+
+.gi-donate-svg-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 35%;
+}
+
+.gi-donate-svg {
+    width: 80%;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    .gi-donate-row-wrap h2 {
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .gi-donate-row-wrap h2 {
+        font-size: 1.8rem;
+    }
+}

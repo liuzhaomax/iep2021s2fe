@@ -1,0 +1,197 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/8/6 8:45
+ * @version     v1.0
+ * @filename    Home.css
+ * @description 
+ ***************************************************************************/
+
+.Home {
+    position: relative;
+    /*background-color: rgba(0,0,0,0);*/
+    /*background: url(../../assets/home/bg_home.jpeg);*/
+    color: white;
+}
+
+#home-matter {
+    background-color: rgba(0,0,0,0.5);
+    padding: 25px 0;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*mix-blend-mode: screen;*/
+    position: absolute;
+    margin-top: -20vh;
+    width: 100%;
+}
+
+#home-matter h2, #home-matter p {
+    color: white;
+    text-align: center;
+}
+
+#home-matter h2 {
+    font-size: 30px;
+}
+
+#home-matter p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/*blocks*/
+.home-block {
+    /*background: url(../../assets/home/bg_home.jpeg);*/
+    height: 100vh;
+    padding: 80px 0;
+}
+.home-block-long {
+    height: 135vh;
+    padding: 80px 0;
+}
+
+.home-block-container {
+    width: 100vw;
+    max-width: 80vw;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.home-block h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.home-sub-block-container {
+    width: 100%;
+    height: 75vh;
+}
+
+/*help*/
+#home-need-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35vh;
+    background-color: rgba(64, 76, 87, 0.88);
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+}
+
+#home-need-help h2 {
+    color: white;
+    font-size: 32px;
+    min-font-size: 16px;
+}
+
+#home-btn-explore-now {
+    background-color: #fcc490;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+    min-font-size: 16px;
+    border: 0;
+    border-radius: 50px;
+    width: 230px;
+    height: 75px;
+    margin-top: 20px;
+}
+
+#home-btn-explore-now:hover {
+    background-color: #fdd6a9;
+}
+
+/*timeline*/
+#home-timeline-container {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 150px;
+    opacity: 0;
+    pointer-events: none;
+    /*background: rgba(64,64,64,0.4);*/
+}
+
+#home-timeline {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-timeline li {
+    margin: 60px;
+}
+
+#home-timeline .ant-timeline-item-head {
+    background-color: #30406a;
+    width: 25px;
+    height: 25px;
+    border: 5px solid white;
+}
+
+#home-timeline .ant-timeline-item-tail {
+    height: 140px;
+    left: 12px;
+}
+
+#home-timeline .ant-timeline-item-head:hover {
+    cursor: pointer;
+    box-shadow: 0 -10px 10px rgba(255,255,255,0.5),
+    10px 0 10px rgba(255,255,255,0.5),
+    0 10px 10px rgba(255,255,255,0.5),
+    -10px 0 10px rgba(255,255,255,0.5);
+}
+
+/*sub block*/
+.home-sub-block-container {
+    background-color: rgba(64, 87, 75, 0.87);
+    border-radius: 35px;
+    padding: 40px;
+}
+
+/*media*/
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+}
+@media only screen and (min-width: 994px) and (max-width: 1024px) {
+
+}
+@media only screen and (min-width: 769px) and (max-width: 993px) {
+
+}
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 415px) and (max-width: 450px) {
+    #home-matter p {
+        display: none;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    #home-matter p {
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #home-matter p {
+        display: none;
+    }
+}
+
+

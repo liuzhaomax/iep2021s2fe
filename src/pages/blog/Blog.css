@@ -1,0 +1,169 @@
+/****************************************************************************
+ * @copyright   LIU Zhao
+ * @authors     LIU Zhao (liuzhaomax@163.com)
+ * @date        2021/9/24 11:18
+ * @version     v1.0
+ * @filename    Blog.css
+ * @description 
+ ***************************************************************************/
+
+#Blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.blog-banner {
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/*title*/
+.blog-banner-title {
+    background: url(../../assets/blog/banner.jpg) no-repeat center center;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-banner-title h1, .blog-banner-title h2 {
+    color: white;
+}
+
+.blog-banner-title h1 {
+    font-size: 3.5rem;
+    margin-top: 60px;
+    margin-bottom: 3px;
+}
+
+.blog-banner-title h2 {
+    font-size: 1.8rem;
+}
+
+/*waterfall*/
+.BlogMain {
+    margin: 30px auto;
+    max-width: 2550px;
+    min-width: 650px;
+    width: 70vw;
+    columns: 3;
+    column-gap: 30px;
+}
+
+.blog-wrap {
+    width: 100%;
+    margin: 0 0 30px;
+    background-color: white;
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+    2px 3px 6px rgba(0,0,0,0.3);
+    break-inside: avoid;
+}
+
+.blog-wrap:hover {
+    box-shadow: -2px -2px 6px rgba(51, 142, 108,0.5),
+    5px 5px 10px rgba(51, 142, 108,0.5);
+    cursor: pointer;
+}
+
+.blog-wrap img {
+    width: 100%;
+}
+
+.blog-wrap h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px 0;
+}
+
+.blog-wrap p {
+    font-size: 16px;
+    padding: 0 10px 10px;
+}
+
+.blog-wrap-widget {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-wrap-widget p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.blog-wrap-widget p:first-child {
+    color: #9092BA;
+}
+
+.blog-wrap-widget p:last-child {
+    color: rgba(51, 142, 108,0.8);
+}
+
+/*To Top*/
+#blog-btn-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 60px;
+    margin-right: 40px;
+    z-index: 95;
+    cursor: pointer;
+}
+
+#blog-btn-to-top svg {
+    width: 50px;
+    height: 50px;
+    fill: #338e6c;
+}
+
+#blog-btn-to-top svg:hover {
+    fill: rgba(51, 142, 108, 0.7);
+}
+
+/*load more*/
+#blog-btn-load-more svg {
+    width: 50px;
+    height: 50px;
+    transform: rotateZ(90deg);
+    fill: #338e6c;
+}
+
+#blog-load-more-box {
+    z-index: 1;
+    width: 100%;
+    height: 130px;
+    margin-top: -130px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
+}
+
+#blog-load-more-box:hover {
+    cursor: pointer;
+}
+
+#blog-load-more-box:hover #blog-btn-load-more svg {
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .BlogMain {
+        columns: 2;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .BlogMain {
+        columns: 1;
+    }
+}
